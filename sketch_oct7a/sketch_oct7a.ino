@@ -26,7 +26,7 @@ void loop() {
   hum =dht.readHumidity();
 
   if(isnan(temp) || isnan(hum)){
-    serial.println
+    return;
   }
 
   Serial.println(temp);
